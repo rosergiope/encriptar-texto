@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es-co">
+<head>
+    <meta charset="UTF-8"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge Encriptador de texto</title>
+    <link rel="stylesheet" href="styles/style.css">
+
+</head>
+<body>
+    <header class="header">
+        <nav class="header__menu">
+        <p>a</p>
+        </nav>
+    </header>
+    <main class="presentacion">
+        <section class="presentacion__contenido">
+            <div class="presentacion__contenido__texto">
+                <textarea class="presentacion__texto" id="textoInicial" name="texto_claro"
+                cols="60%" rows="15%" placeholder="Ingrese el texto aquí"></textarea>
+                <p>
+                    Solo letras minúsculas y sin acentos
+                </p>
+            </div>
+            <div class="presentacion__enlaces">
+                <a class="presentacion__enlaces__link" onclick="encriptar();">
+                    Encriptar
+                </a>
+                <a class="presentacion__enlaces__link" onclick="desencriptar();">
+                    Desencriptar
+                </a>
+            </div>
+        </section>
+        <section class="presentacion__contenido">
+            <div class="presentacion__contenido__texto">
+                <textarea class="presentacion__texto" id="textoProcesado" name="texto_claro" 
+                cols="60%" rows="15%" placeholder="Ningun mensaje fue encontrado" readonly></textarea>
+                <p>
+                    &nbsp;
+                </p>
+            </div>
+            <div class="presentacion__enlaces">
+                <a class="presentacion__enlaces__link" onclick="copiarTexto();">
+                    Copiar
+                </a>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <p>SergioP &copy; 2024</p>
+    </footer>
+    <script src="./js/app.js" defer></script>
+</body>
+</html>
